@@ -6,9 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
+    <!-- <div id="testHead">
+    <div id="xMarkerMainMenu"></div>
+    <div id="oMarkerMainMenu"></div>
+    <div id="xEmpty"></div>
+    <div id="oEmpty"></div>
+    </div> -->
     
+    <div id="winnerFoundBackground"></div>
+    <div id="winnerFoundBanner">
+        <div>
+            <p>Player 1 Wins!</p>
+
+            <div>
+                <div id="oMarkerWinnerBanner"></div>
+                <p>Takes The Round</p>
+            </div>
+
+            <div>
+                <button id="quitWinBannerButton">
+                    QUIT
+                </button>
+                <button id="oWinBannerNextRoundBtn">
+                    NEXT ROUND
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+    
+
+    <div id="container">
+        <div id="newDivWithBoardDivs">
+           <div id="logoAtBoard">
+                <div id="xc"></div>
+                <div id="oo"></div>
+                <div id="xe"></div>
+                <div id="oe"></div>
+           </div>
+
+           <div id="markerTurnSign">
+            <div id="toggleMarkerTurnSign"></div>
+            <p>TURN</p>
+           </div>
+           <button id="restartButtonAtBoard"></button>
+        </div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="boardDiv"></div>
+        <div class="newDivWithBoardDivs">
+            Bottom Div
+        </div>
+    </div>
+    
+<!-- New Game Menu Below This ======================================= -->
+    <div id="newGameMenu">
+        <div id="xMarkerMainMenu"></div>
+        <div id="oMarkerMainMenu"></div>
+        <div id="xEmpty"></div>
+        <div id="oEmpty"></div>
+    
+        <div id="pickPlayerOneMark">
+            <p><b>Pick Player 1's Mark</b></p>
+            <div id = "toggleMarker">
+                <div id="toggleMarkerChild">
+
+                <div id="xMarkerToggleDiv" class="xMarkerToggleUnClicked"> </div>
+                <div id = "oMarkerToggleDiv" class="oMarkerToggleUnClicked"> </div>
+
+                </div>
+            </div>
+            <p>Remember: x goes first!</p>
+        </div>
+
+        <div id="newGamePvpButton" class="newGameButton">
+            NEW GAME (VS PLAYER)
+        </div>
+
+        <div id ="newGameAiButton"class="newGameButton">
+            NEW GAME (VS AI)
+        </div>
+
+    </div>
+<!-- New Game Menu Above This ======================================= -->
+
+<!-- Form For Player Names Below This +++++++++++++++++++++++++++++++ -->
+    <div id="playerNamesFormMenu">
+        <div id="xMarkerMainMenu"></div>
+        <div id="oMarkerMainMenu"></div>
+        <div id="xEmpty"></div>
+        <div id="oEmpty"></div>
+        <div>
+            <form>
+                <label for="player1">Player 1 Name:</label><br>
+                <input type="text" id="player1Name" name="player1"required><br>
+                <label for="player2">Player 2 Name:</label><br>
+                <input type="text" id="player2Name" name="player2" required><br>
+                <br>
+                <button type="submit" id="submitPlayerNames">SUBMIT</button>
+                <br>
+                <button id="returnFromPlayerNames">RETURN</button>
+              </form> 
+
+        </div>
+    </div>
+
 </body>
 </html>
