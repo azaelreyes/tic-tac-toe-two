@@ -51,7 +51,7 @@ const displayController = (() => {
             }
                 xToggleOption.classList.replace("xUnselected", "xSelected");
                 activatePvpGameBtn();
-                activateAiGameBtn();
+                // activateAiGameBtn(); 
                 playerOne.marker = true;
                 playerTwo.marker = false;
         });
@@ -62,7 +62,7 @@ const displayController = (() => {
             }
                 oToggleOption.classList.replace("oUnselected","oSelected");
                 activatePvpGameBtn();
-                activateAiGameBtn();
+                // activateAiGameBtn();
                 playerOne.marker = false;
                 playerTwo.marker = true;
 
@@ -83,9 +83,9 @@ const displayController = (() => {
             renderPlayerNamesFormPage();
         });
     };
-    const activateAiGameBtn = ()=> {
+    // const activateAiGameBtn = ()=> {
 
-    };
+    // };
 
     const playerNamesFormPage = document.getElementById("playerNamesFormPage");
     const submitPlayerNames = document.getElementById("submitPlayerNames");
