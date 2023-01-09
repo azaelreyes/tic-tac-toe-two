@@ -8,118 +8,130 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
 </head>
+
+
+
 <body>
-    <!-- <div id="testHead">
-    <div id="xMarkerMainMenu"></div>
-    <div id="oMarkerMainMenu"></div>
-    <div id="xEmpty"></div>
-    <div id="oEmpty"></div>
-    </div> -->
+
+<!-- START PAGE BELOW======================================= -->
+<div id="startPage" class="hidden">
     
-    <div id="winnerFoundBackground"></div>
-    <div id="winnerFoundBanner">
-        <div>
-            <p>Player 1 Wins!</p>
+    <div class="gameLogo">
+    </div>
+
+    <div id="selectP1Marker">
+        <p><b>Pick Player 1's Mark</b></p>
+        <div id ="toggleMarker">
+            <div>
+                <div id="xToggleOption" class="xUnselected toggleOption"> </div>
+                <div id="oToggleOption" class="oUnselected toggleOption"> </div>
+            </div>
+        </div>
+        <p>Select A Mark To Move On!</p>
+    </div>
+
+    <div id="pvpGameBtn" class="newGameBtn">NEW GAME (VS PLAYER)</div>
+    <div id="aiGameBtn" class="newGameBtn">NEW GAME (VS AI)</div>
+
+</div>
+<!-- START PAGE ABOVE======================================= -->
+
+<!-- PLAYER NAME FORM BELOW ================================ -->
+<div id="playerNamesFormPage" class="hidden">
+    <div class="gameLogo"></div>
+
+        <form>
+            <label for="player1">Player 1 Name:</label><br>
+            <input type="text" id="player1FormInput" name="player1"required><br>
+            <label for="player2">Player 2 Name:</label><br>
+            <input type="text" id="player2FormInput" name="player2" required><br>
+            <br>
+            <button type="submit" id="submitPlayerNames">SUBMIT</button>
+            <br>
+            <button id="returnFromPlayerNames">RETURN</button>
+          </form> 
+
+    </div>
+<!-- PLAYER NAME FORM ABOVE ================================ -->
+
+<!-- GAMEBOARD SCREEN BELOW ================================ -->
+    <div id="container" class="hidden">
+
+        <div id="topGameboardDiv">
+            <div id= "logoAtBoard" class="gameLogo"></div>
+
+            <div id="turnSignDiv">
+                <div id="turnSignMarker"></div>
+                <p id="turnSignText">TURN</p>
+            </div>
+
+            <button id="restartBtn"></button>
+
+        </div>
+        
+        <div id="bottomGameboardDiv">
+
+            <div id="playerOneWinsDiv" class="bottomDiv scorePlayerX">
+                <p id="p1ScoreName">(P1)</p>
+                <p id="p1ScoreNum"></p>
+            </div>
+            <div id="tiesDiv" class="bottomDiv">
+                <p>TIES</p>
+                <p id="scoreTiesNum"></p>
+            </div>
+            <div id="playerTwoWinsDiv" class="bottomDiv scorePlayerO">
+                <p id="p2ScoreName">(P2)</p>
+                <p id="p2ScoreNum"></p>
+            </div>
+
+        </div>
+
+    </div>
+<!-- GAMEBOARD SCREEN ABOVE ================================ -->
+
+ <!-- RESULTS SCREENS BELOW ================================  -->
+    <div id="winBackground" class="hidden"></div>
+
+    <div id="winBanner" class="hidden">
+
+        
+            <p id="winBannerFirstText">Player 1 Wins!</p>
+
+            <div id="winBannerMiddleDiv">
+                <div id="winBannerBigMarker"></div>
+                <p id="winBannerBigMainText">Takes The Round</p>
+            </div>
 
             <div>
-                <div id="oMarkerWinnerBanner"></div>
-                <p>Takes The Round</p>
+                <button id="winBannerQuitBtn">QUIT</button>
+                <button id="winBannerNextRoundBtn">NEXT ROUND</button>
             </div>
 
-            <div>
-                <button id="quitWinBannerButton">
-                    QUIT
-                </button>
-                <button id="oWinBannerNextRoundBtn">
-                    NEXT ROUND
-                </button>
-            </div>
-
-
-        </div>
+        
+        
     </div>
+ <!-- RESULTS SCREENS ABOVE ================================  -->
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    
     
 
-    <div id="container">
-        <div id="newDivWithBoardDivs">
-           <div id="logoAtBoard">
-                <div id="xc"></div>
-                <div id="oo"></div>
-                <div id="xe"></div>
-                <div id="oe"></div>
-           </div>
 
-           <div id="markerTurnSign">
-            <div id="toggleMarkerTurnSign"></div>
-            <p>TURN</p>
-           </div>
-           <button id="restartButtonAtBoard"></button>
-        </div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="boardDiv"></div>
-        <div class="newDivWithBoardDivs">
-            Bottom Div
-        </div>
-    </div>
-    
-<!-- New Game Menu Below This ======================================= -->
-    <div id="newGameMenu">
-        <div id="xMarkerMainMenu"></div>
-        <div id="oMarkerMainMenu"></div>
-        <div id="xEmpty"></div>
-        <div id="oEmpty"></div>
-    
-        <div id="pickPlayerOneMark">
-            <p><b>Pick Player 1's Mark</b></p>
-            <div id = "toggleMarker">
-                <div id="toggleMarkerChild">
 
-                <div id="xMarkerToggleDiv" class="xMarkerToggleUnClicked"> </div>
-                <div id = "oMarkerToggleDiv" class="oMarkerToggleUnClicked"> </div>
 
-                </div>
-            </div>
-            <p>Remember: x goes first!</p>
-        </div>
 
-        <div id="newGamePvpButton" class="newGameButton">
-            NEW GAME (VS PLAYER)
-        </div>
 
-        <div id ="newGameAiButton"class="newGameButton">
-            NEW GAME (VS AI)
-        </div>
-
-    </div>
-<!-- New Game Menu Above This ======================================= -->
-
-<!-- Form For Player Names Below This +++++++++++++++++++++++++++++++ -->
-    <div id="playerNamesFormMenu">
-        <div id="xMarkerMainMenu"></div>
-        <div id="oMarkerMainMenu"></div>
-        <div id="xEmpty"></div>
-        <div id="oEmpty"></div>
-        <div>
-            <form>
-                <label for="player1">Player 1 Name:</label><br>
-                <input type="text" id="player1Name" name="player1"required><br>
-                <label for="player2">Player 2 Name:</label><br>
-                <input type="text" id="player2Name" name="player2" required><br>
-                <br>
-                <button type="submit" id="submitPlayerNames">SUBMIT</button>
-                <br>
-                <button id="returnFromPlayerNames">RETURN</button>
-              </form> 
-
-        </div>
-    </div>
 
 </body>
 </html>

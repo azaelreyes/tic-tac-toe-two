@@ -5,195 +5,9 @@ body{
     height: 100vh;
     background-color: #061e2a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
-
-
-
-/* #Container is parent to .boardDiv */
-#container{
-    width: 490px;
-    height: 590px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-
-    margin: auto auto auto auto;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-
-    align-items: center;
-    text-align: center;
-
-}
-.boardDiv{
-    height: 150px;
-    width: 150px;
-    background-color: rgb(72, 95, 131);
-    color: rgb(72, 95, 131);
-    margin:6px ;
-    border-radius: 8%;
-    
-}
-#xc{
-    width: 40px;
-    height: 40px;
-    background-image: url(xMarkerCyan.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center; 
-}
-#oo{
-    width: 40px;
-    height: 40px;
-    background-image: url(oMarkerOrange.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-}
-#xe{
-    width: 40px;
-    height: 40px;
-    background-image: url(xMarkerEmpty.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-}
-#oe{
-    width: 40px;
-    height: 40px;
-    background-image: url(oMarkerEmpty.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-}
-
-
-#newDivWithBoardDivs{
-    height: 50px;
-    width: 490px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    
-}
-
-#logoAtBoard{
-    width: 160px;
-    height: 40px;
-    display: flex;
-    flex-wrap: wrap;
-
-  }
-
-  #markerTurnSign{
-    width: 150px;
-    height: 50px;
-    margin-left: -100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: bolder;
-    color:lightgrey;
-    margin-top: -15px;
-
-    
-  }
-  
-  #toggleMarkerTurnSign{
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-  }
-  .xTurn{
-    background-image: url(xMarkerGrey.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-  }
-  .oTurn{
-    background-image: url(oMarkerGrey.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-  }
-#restartButtonAtBoard{
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-    background-image: url(restart.svg);
-    background-color: lightgrey;
-    background-repeat:no-repeat;
-    background-size:70%;
-    background-position: center;
-    margin-right: 10px;
-
-
-}
-
-
-
-
-
-
-
-.xMarkerOnBoard{
-    background-image: url(xMarkerCyan.svg);
-    background-repeat:no-repeat;
-    background-size:80%;
-    background-position: center;
-}
-.oMarkerOnBoard{
-    background-image: url(oMarkerOrange.svg);
-    background-repeat:no-repeat;
-    background-size:80%;
-    background-position: center;
-}
-.xMarkerEmptyOnBoard{
-    background-image: url(xMarkerEmpty.svg);
-    background-repeat:no-repeat;
-    background-size:80%;
-    background-position: center;
-    background-color: rgb(69, 78, 97);
-}
-.oMarkerEmptyOnBoard{
-    background-image: url(oMarkerEmpty.svg);
-    background-repeat:no-repeat;
-    background-size:80%;
-    background-position: center;
-    background-color: rgb(69, 78, 97);
-}
-
-.oWinnerMarkerOnBoard{
-    background-image: url(oMarkerLightNavy.svg);
-    background-repeat:no-repeat;
-    background-size:80%;
-    background-position: center;
-    background-color:rgb(250, 191, 80) ;
-    transition-duration: 3s;
-    transition-property: background-color;
-    transition-property: background-image;
-    transition-property: revert;
-}
-.xWinnerMarkerOnBoard{
-    background-image: url(xMarkerLightNavy.svg);
-    background-repeat:no-repeat;
-    background-size:80%;
-    background-position: center;
-    background-color: cyan;
-    transition-duration: 3s;
-    transition-property: background-color;
-    transition-property: background-image;
-    transition-property: revert;
-
-}
-
-
-#newGameMenu{
+/* START PAGE CSS BELOW============================ */
+#startPage{
     width: 350px;
     height: 400px;
     color: white;
@@ -210,8 +24,8 @@ body{
     justify-content: center;
     text-align: center;
 }
-
-.newGameButton{
+/* NEW GAME BUTTON DIV BELOW */
+.newGameBtn{
     line-height: 60px;
     height: 60px;
     width: 100%;
@@ -219,91 +33,37 @@ body{
     font-size:1.5ch;
     font-weight: bold;
 }
-
-#newGamePvpButton{
+#pvpGameBtn{
     background-color: cyan;
     color: #061e2a;
 }
-#newGamePvpButton:hover{
+#pvpGameBtn:hover{
     background-color: rgb(0, 209, 209);
     color:white;
 }
-#newGameAiButton{
+#aiGameBtn{
     background-color:rgb(250, 191, 80);
     color: #061e2a;
 }
-#newGameAiButton:hover{
+#aiGameBtn:hover{
     background-color: rgb(180, 142, 72);
     color:white;
 }
-
-#testHead{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    
-    margin-left: 35%;
-    margin-top: 10%;
-
-    align-items: center;
-    text-align: center;
-}
-
-
-#xMarkerMainMenu{
-    width: 50px;
-    height: 50px;
-
-    background-image: url(xMarkerCyan.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center; 
-}
-#oMarkerMainMenu{
-    width: 50px;
-    height: 50px;
-    background-image: url(oMarkerOrange.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center; 
-}
-#xEmpty{
-    width: 50px;
-    height: 50px;
-    background-image: url(xMarkerEmpty.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center; 
-}
-#oEmpty{
-    width: 50px;
-    height: 50px;
-    background-image: url(oMarkerEmpty.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center; 
-}
-
-
-#pickPlayerOneMark{
+/* NEW GAME BUTTON DIV ABOVE */
+/*SELECTP1MARKER DIV BELOW */
+#selectP1Marker{
     background-color: #0c384e;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 10px;
     height: 150px;
 }
-
 #toggleMarker{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
-    
+    justify-content: center;   
 }
-
-
-
-#toggleMarkerChild{
+#toggleMarker > div{
     background-color:#061e2a;
     width: 90%;
     border-radius: 10px;
@@ -311,55 +71,33 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-
-#oMarkerToggleDiv{
-    width: 50%;
+.toggleOption{
+    width: 46%;
     border-radius: 10px;
-    height: 50px;
-}
-.oMarkerToggleUnClicked{
-    background-image: url(oMarkerGrey.svg);
+    height: 40px;
+    border:solid 6px;
+    border-color: #061e2a;
     background-repeat:no-repeat;
     background-size:contain;
     background-position: center; 
 }
-
-#xMarkerToggleDiv{
-    width: 50%;
-    border-radius: 10px;
-    height: 50px;
-}
-.xMarkerToggleUnClicked{
-    background-image: url(xMarkerGrey.svg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: center; 
-}
-    
-
-.clickedMarkerToggleDiv{
-    background-color: lightgrey;
-    fill:black;
-}
-
-#oMarkerToggleDiv:hover, .oMarkerToggleClicked{
+.xUnselected{ background-image: url(xMarkerGrey.svg);}
+.oUnselected{ background-image: url(oMarkerGrey.svg);}
+#oToggleOption:hover, .oSelected{
     background-color: lightgrey;
     background-image: url(oMarkerNavy.svg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: center; 
 }
-
-#xMarkerToggleDiv:hover, .xMarkerToggleClicked{
+#xToggleOption:hover, .xSelected{
     background-color: lightgrey;
     background-image: url(xMarkerNavy.svg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: center;
 }
+/* SELECTP1MARKER DIV ABOVE */
+
+/* START PAGE CSS ABOVE============================ */
 
 
-#playerNamesFormMenu{
+/* PLAYER NAME FORM BELOW ================================ */
+#playerNamesFormPage{
     width: 350px;
     height: 400px;
     color: white;
@@ -377,8 +115,6 @@ body{
     justify-content: center;
     text-align: center;
 }
-
-
 form{
     width: 350px;
     font-size: large;
@@ -402,7 +138,6 @@ input{
     background-color: rgb(111, 199, 199);
 
 }
-
 #submitPlayerNames{
     width: 70%;
     height: 50px;
@@ -411,11 +146,165 @@ input{
     border-radius: 10px;
     font-weight: bolder;   
 }
-#submitPlayerNames:hover{
-    background-color:rgb(169, 133, 67);
+#submitPlayerNames:hover{ background-color:rgb(169, 133, 67);}
+/* PLAYER NAME FORM ABOVE ================================ */
+/* GAMEBOARD PAGE BELOW ================================ */
+
+#container{
+    width: 490px;
+    height: 590px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+
+    margin: auto auto auto auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    align-items: center;
+    text-align: center;
+
 }
-/*  EDIT THIS VISIBILITY */
-#winnerFoundBackground{ 
+
+.boardDiv{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(72, 95, 131);
+    color: rgb(72, 95, 131);
+    margin:6px ;
+    border-radius: 8%;
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position: center;
+}
+
+#topGameboardDiv, #bottomGameboardDiv{
+    height: 50px;
+    width: 490px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#logoAtBoard{
+    background-position: 0px, 40px, 80px, 120px;
+    width: 160px;
+    height: 40px;
+  }
+
+  #turnSignDiv{
+    width: 150px;
+    height: 50px;
+    margin-left: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color:lightgrey;
+    margin-top: -15px;
+
+  }
+
+  #turnSignMarker{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  .xTurn{ background-image: url(xMarkerGrey.svg);}
+  .oTurn{ background-image: url(oMarkerGrey.svg);}
+  .xTurn, .oTurn {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+  }
+
+#restartBtn{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-image: url(restart.svg);
+    background-color: lightgrey;
+    background-repeat:no-repeat;
+    background-size:70%;
+    background-position: center;
+    margin-right: 10px;
+
+
+}
+
+
+
+#bottomGameboardDiv{
+    margin-top: 10px;
+}
+#playerOneWinsDiv{
+    margin-left: 10px;
+}
+
+.bottomDiv{
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: small;
+}
+.bottomDiv > p{
+    margin-bottom: 1px;
+    margin-top: 4px;
+}
+#p1ScoreNum, #p2ScoreNum, #scoreTiesNum{
+    font-size: large;
+    font-weight: bolder;
+}
+
+#tiesDiv{
+    background-color:lightgrey;
+}
+
+#playerTwoWinsDiv{
+    margin-right: 10px;
+}
+
+.scorePlayerX{
+    background-color: cyan;
+}
+.scorePlayerO{
+    background-color: rgb(250, 191, 80);
+
+}
+
+/* MarkerHoverBoard CSS BELOW*/
+.xMarkerOnBoard{ background-image: url(xMarkerCyan.svg); }
+.oMarkerOnBoard{ background-image: url(oMarkerOrange.svg); }
+.xMarkerEmptyOnBoard{
+    background-image: url(xMarkerEmpty.svg);
+    background-color: rgb(69, 78, 97);
+}
+.oMarkerEmptyOnBoard{
+    background-image: url(oMarkerEmpty.svg);
+    background-color: rgb(69, 78, 97);
+}
+.oWinnerMarkerOnBoard{
+    background-image: url(oMarkerLightNavy.svg);
+    background-color:rgb(250, 191, 80) ;
+}
+.xWinnerMarkerOnBoard{
+    background-image: url(xMarkerLightNavy.svg);
+    background-color: cyan;
+}
+.oWinnerMarkerOnBoard, .xWinnerMarkerOnBoard{
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-property: background-image;
+    transition-property: revert;
+}
+
+/* <!-- RESULTS SCREENS BELOW ================================  --> */
+
+#winBackground{ 
     background-color: #061e2a;
     opacity: 50%;
     width: 100vw;
@@ -424,10 +313,8 @@ input{
     z-index: 90;
     top: 50%;
     margin: -50vh 0 0 0;
-    visibility: hidden;
 }
-/*  EDIT THIS VISIBILITY */
-#winnerFoundBanner{
+#winBanner{
     background-color: rgb(69, 78, 97);
     width: 100vw;
     height: 220px;
@@ -435,11 +322,13 @@ input{
     z-index: 100;
     top: 50%;
     margin: -110px 0 0 0;
-    visibility: hidden;
     
+    justify-content: center;
+    text-align: center;
+
 }
 
-#winnerFoundBanner div{
+#winBannerFirstText{
     color:white;
     text-align: center;
     align-items: center;
@@ -447,7 +336,7 @@ input{
 
 }
 
-#quitWinBannerButton{
+#winBannerQuitBtn{
     height: 45px;
     width: 100px;
     margin-right: 10px;
@@ -455,51 +344,51 @@ input{
     font-weight: bold;
     background-color: aliceblue;
 }
-
-#oWinBannerNextRoundBtn{
+.oWinBannerQuitBtn{ background-color:rgb(250, 191, 80) ;}
+.xWinBannerQuitBtn{ background-color: cyan;}
+#winBannerNextRoundBtn{
     height: 45px;
     width: 150px;
     border-radius: 10px;
-    background-color: rgb(250, 191, 80) ;
     font-weight: bold;
 }
-#oWinBannerNextRoundBtn:hover{
-    background-color: rgb(174, 134, 58) ;
-}
-#winnerFoundBanner div div{
-    
+
+
+#winBannerMiddleDiv{
     display: flex;
-    color: rgb(250, 191, 80) ;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#winBannerBigMainText{
     font-weight: 900;
     font-size:  50px;
     line-height: 0px;
 }
-#oMarkerWinnerBanner{
+#winBannerBigMarker{
     width: 100px;
-    height: 100px;
-    background-image: url(oMarkerOrange.svg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center; 
     margin-right: 20px;
 }
+.oWinBigMarker{ background-image: url(oMarkerEmpty.svg);}
+.xWinBigMarker{ background-image: url(xMarkerEmpty.svg);}
+/* <!-- RESULTS SCREENS ABOVE ================================  --> */
+/* GAMEBOARD PAGE ABOVE ================================*/
 
-#xMarkerWinnerBanner{
-    width: 100px;
-    height: 100px;
-    background-image: url(xMarkerCyan.svg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center; 
-    margin-right: 20px;
-    
+/* CSS LOGO BELOW ============================ */
+.gameLogo{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(xMarkerCyan.svg), url(oMarkerOrange.svg),url(xMarkerEmpty.svg),url(oMarkerEmpty.svg);
+    background-repeat: no-repeat;
+    background-position: 0px, 50px, 100px, 150px;
+    width: 200px;
+    height: 50px;
 }
-
-
-  
-
-
-
+/* CSS FOR LOGO ABOVE ============================ */
 
 /* VISIBLE & INVISIBLE TOGGLE CLASSES */
   .visible {
