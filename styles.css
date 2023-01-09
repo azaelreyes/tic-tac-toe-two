@@ -81,15 +81,15 @@ body{
     background-size:contain;
     background-position: center; 
 }
-.xUnselected{ background-image: url(xMarkerGrey.svg);}
-.oUnselected{ background-image: url(oMarkerGrey.svg);}
+.xUnselected{ background-image: url(./images/xMarkerGrey.svg);}
+.oUnselected{ background-image: url(./images/oMarkerGrey.svg);}
 #oToggleOption:hover, .oSelected{
     background-color: lightgrey;
-    background-image: url(oMarkerNavy.svg);
+    background-image: url(./images/oMarkerNavy.svg);
 }
 #xToggleOption:hover, .xSelected{
     background-color: lightgrey;
-    background-image: url(xMarkerNavy.svg);
+    background-image: url(./images/xMarkerNavy.svg);
 }
 /* SELECTP1MARKER DIV ABOVE */
 
@@ -214,8 +214,8 @@ input{
     height: 25px;
     margin-right: 5px;
   }
-  .xTurn{ background-image: url(xMarkerGrey.svg);}
-  .oTurn{ background-image: url(oMarkerGrey.svg);}
+  .xTurn{ background-image: url(./images/xMarkerGrey.svg);}
+  .oTurn{ background-image: url(./images/oMarkerGrey.svg);}
   .xTurn, .oTurn {
     background-repeat:no-repeat;
     background-size:cover;
@@ -226,7 +226,7 @@ input{
     width: 45px;
     height: 45px;
     border-radius: 10px;
-    background-image: url(restart.svg);
+    background-image: url(./images/restart.svg);
     background-color: lightgrey;
     background-repeat:no-repeat;
     background-size:70%;
@@ -277,22 +277,22 @@ input{
 }
 
 /* MarkerHoverBoard CSS BELOW*/
-.xMarkerOnBoard{ background-image: url(xMarkerCyan.svg); }
-.oMarkerOnBoard{ background-image: url(oMarkerOrange.svg); }
+.xMarkerOnBoard{ background-image: url(./images/xMarkerCyan.svg); }
+.oMarkerOnBoard{ background-image: url(./images/oMarkerOrange.svg); }
 .xMarkerEmptyOnBoard{
-    background-image: url(xMarkerEmpty.svg);
+    background-image: url(./images/xMarkerEmpty.svg);
     background-color: rgb(69, 78, 97);
 }
 .oMarkerEmptyOnBoard{
-    background-image: url(oMarkerEmpty.svg);
+    background-image: url(./images/oMarkerEmpty.svg);
     background-color: rgb(69, 78, 97);
 }
 .oWinnerMarkerOnBoard{
-    background-image: url(oMarkerLightNavy.svg);
+    background-image: url(./images/oMarkerLightNavy.svg);
     background-color:rgb(250, 191, 80) ;
 }
 .xWinnerMarkerOnBoard{
-    background-image: url(xMarkerLightNavy.svg);
+    background-image: url(./images/xMarkerLightNavy.svg);
     background-color: cyan;
 }
 .oWinnerMarkerOnBoard, .xWinnerMarkerOnBoard{
@@ -373,8 +373,8 @@ input{
     background-position: center; 
     margin-right: 20px;
 }
-.oWinBigMarker{ background-image: url(oMarkerEmpty.svg);}
-.xWinBigMarker{ background-image: url(xMarkerEmpty.svg);}
+.oWinBigMarker{ background-image: url(./images/oMarkerEmpty.svg);}
+.xWinBigMarker{ background-image: url(./images/xMarkerEmpty.svg);}
 /* <!-- RESULTS SCREENS ABOVE ================================  --> */
 /* GAMEBOARD PAGE ABOVE ================================*/
 
@@ -382,7 +382,7 @@ input{
 .gameLogo{
     display: flex;
     flex-wrap: wrap;
-    background-image: url(xMarkerCyan.svg), url(oMarkerOrange.svg),url(xMarkerEmpty.svg),url(oMarkerEmpty.svg);
+    background-image: url(./images/xMarkerCyan.svg), url(./images/oMarkerOrange.svg),url(./images/xMarkerEmpty.svg),url(./images/oMarkerEmpty.svg);
     background-repeat: no-repeat;
     background-position: 0px, 50px, 100px, 150px;
     width: 200px;
